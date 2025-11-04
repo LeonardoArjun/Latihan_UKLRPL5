@@ -18,10 +18,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      {/* Navbar selalu tampil */}
       <Navbar onNavigate={setPage} onLogout={() => setPage("login")} />
 
-      {/* Konten halaman sesuai state */}
       <main className="pt-24">
         {page === "dashboard" && <Dashboard />}
         {page === "presensi" && <PresensiPage />}

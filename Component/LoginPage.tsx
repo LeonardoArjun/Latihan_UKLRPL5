@@ -4,7 +4,7 @@ import { useState } from "react";
 function LoginPage({ onLogin }) {
   const handleLogin = (e) => {
     e.preventDefault();
-    onLogin(); // langsung ke dashboard
+    onLogin();
   };
 
   return (
